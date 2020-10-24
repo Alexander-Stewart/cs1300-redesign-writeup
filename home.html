@@ -2,13 +2,81 @@
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Redesign Writeup</title>
   </head>
 
-  <body>
-    <!-- TODO: put your HTML code here! -->
+  <body class="bg-light">
+  	<h1 class="text-center">Redesign: Grove Street Apparel</h1>
+  	<div class="w-50 m-auto">
+	    <div class="d-flex flex-column my-3" id="background">
+	    	<h2 class="text-center mb-3">Project Background</h2>
+	    	<p>This project had the goal of redesigning a website that had poor design practices. This redesign encompassed the entire design cycle, including hifi and lofi prototyping and a working html page. The website I chose to redesign is for Grove Street Apparel, an up and coming streetwear brand based of of Denton, Texas. </p>
+	    	<h4 class="">The Site</h4>
+	    	<img class="w-100 h-auto my-3" src="./img/original.png" alt="original site screenshot." />
+	    	<p>Their website, grovestreetapparel.net, includes a pretty familiar shopping site setup. It includes a home page, and several pages showcasing their clothing and a checkout system. For the sake of this project, we will be focusing on the homescreen of the site.</p>
+	    	<h4>Finding Problems</h4>
+	    	<p>After inspecting the home page, I noted what I thought about the sites <span class="font-weight-bold">usability, learnability, and memorability</span>. They include:
+	    		<ul>
+	    			<li>Header picture will scroll over the page, covering half the screen consistently.</li>
+	    			<li>White background of header picture, hard to look at as you scroll.</li>
+	    			<li>Clothing items don’t grow/shrink columns as screen size changes.</li>
+	    			<li>No styling per device type, not responsive and must scroll horizontally on iphone devices.</li>
+	    			<li>The <span class="font-weight-bold">memorable</span> portion of the page, which is video, is found at the bottom. We see it last.</li>
+	    			<li>I <span class="font-weight-bold">learned</span> that there is a new collection coming soon, and I assume that the clothes at the bottom are going to be the new styles.</li>
+	    			<li>Site is straightforward and simple, <span class="font-weight-bold">easy to use</span> and move through content.</li>
+	    		</ul></p>
+	    	<h4>Accessibility</h4>
+	    	<p>The webpage has generally good user accessibility. All of the main images have alternate text. Where the page falls behind in accessibility comes mainly from contrast and text sizing. The color scheme of the page has low contrast, making text and images hard to read on black backgrounds (this is very apparent in the header). Also, text across the site is not consistent for easily understanding breaks in sections. 
+	    	</p>
+	    </div>
+
+	    <div class="d-flex flex-column mb-3" id="prototyping">
+	    	<h2 class="text-center mb-3">Prototyping</h2>
+	    	<p>When redesigning the site, Lofi and Hifi prototypes of the website were created. You can find these prototypes below.</p>
+	    	<h4>Lofi Wireframing</h4>
+	    	<img class="w-100 h-auto my-3" src="./img/wireframe1.png" alt="" />
+	    	<img class="w-100 h-auto my-3" src="./img/wireframe2.png" alt="" />
+	    	<img class="w-100 h-auto my-3" src="./img/wireframe3.png" alt="" />
+	    	<h4>Hi-Fi Prototyping</h4>
+	    	<img class="w-100 h-auto my-3" src="./img/desktop.png" alt="" />
+	    	<img class="w-100 h-auto my-3" src="./img/ipad.png" alt="" />
+	    	<img class="w-100 h-auto my-3" src="./img/iphone.png" alt="" />
+	    	<p>Comments:
+	    		<ol>
+	    			<li>This is the video container. It will be in a flex box, and will always take up 75% of the initial screen size. the growth text will fill the remaining 25%</li>
+	    			<li>This is the nav bar. The nav bar is a flex box. Each item contained in the nav bar is a list element that is a flex item, and can be broken Into three items: the logo, page navigation, and login/cart.</li>
+	    			<li>all of these clothes will be contained within a flex container. We will use flex in order to insure it fills the page of the items evenly with the same amount of space depending on the size of the window.</li>
+	    			<li>All title headers will be the font bebas Neue. This creates consistent information about what is a title.</li>
+	    			<li>The sections background is white, signifying a new section from the video above.</li>	
+	    			<li>Monserrat is used for all link text, such as in the nav bar.</li>	
+	    			<li>This button is a quick link to move the page down to the second half of the content.</li>	
+	    			<li>the footer is always at the bottom of the page, and is 50px tall.</li>
+	    			<li>once the size of the screen is small enough, we change the nav bar to have a hamburger menu, in order to hold all of the information from before.</li>	
+	    			<li>Because the screen is smaller, the flex box of clothes from before is now collapsed into one column.</li>	
+	    			<li>On click, the hamburger menu will drop down and hold all of the nabber information.</li>	
+	    			<li>On hover, the links will darken signifying that you can click them.</li>		    			
+	    		</ol>
+	    	</p>
+	    	<h4>Visual Design Style Guide</h4>
+	    	<img class="w-100 h-auto my-3" src="./img/visual_guide.png" alt="" />
+	    </div>
+
+	    <div class="d-flex flex-column mb-" id="responsive-redesign">
+	    	<h2 class="text-center mb-3"><a class="text-decoration-none" href="https://grovestreet-redesign.herokuapp.com">Responsive Redesign</a></h2>
+	    	<img class="w-100 h-auto mb-3" src="./img/new1.png" alt="" />
+	    	<img class="w-100 h-auto my-3" src="./img/new2.png" alt="" />
+	    </div>
+
+	    <div class="d-flex flex-column mb-3" id="takeaways">
+	    	<h2 class="text-center mb-3">takeaways</h2>
+	    	<p>When making this site, I learned how useful Bootstrap is. It made aligning, and adding more nuanced features really easy! getting the sizing of the video correct was tricky, getting media how you want on a website can be difficult. Overall, I think this project went, and the design is much more readable and user friendly!</p>
+	    </div>
+	</div>
   </body>
 </html>
